@@ -2,6 +2,12 @@ fetch(`https://api.airtable.com/v0/appWJAgaz2kO3rrb9/Table%201?api_key=keyB1Op1R
     .then(response => response.json())
     .then(data => {
         const { records, fields, Name, Kr, spec } = data;
-
-        console.log(data.records[0].fields);
+        
+        const markup = `
+        <div>
+            <span>${data.records}</span>
+            <sup>${sys.country}</sup>
+        </div>
+    `;
     })
+

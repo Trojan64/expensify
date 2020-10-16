@@ -3,7 +3,7 @@ fetch(`https://api.airtable.com/v0/appWJAgaz2kO3rrb9/Table%201?api_key=keyB1Op1R
     .then(data => {
         const { records } = data;
         const li = document.createElement("li");
-        var markup = "";
+        var markup;
 
         for(var i = 0; i < data.records.length; i++) {
         console.log(data.records[i].fields.Name + data.records[i].fields.spec + data.records[i].fields.Kr);
@@ -12,14 +12,13 @@ fetch(`https://api.airtable.com/v0/appWJAgaz2kO3rrb9/Table%201?api_key=keyB1Op1R
 
         markup += `
                 <div>
-                    <h2>
-                        <span>${data.records[i].fields.spec}</span>
+                    <p>
                         <span>${data.records[i].fields.Name}</span>
+                        <span>${data.records[i].fields.spec}</span>
                         <span>${data.records[i].fields.Kr} SEK</span>
-                    </h2>
+                    </p>
                 </div>
             `;
-
         li.innerHTML = markup;
         document.getElementById("expenses").appendChild(li);
         }

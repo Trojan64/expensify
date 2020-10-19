@@ -23,5 +23,6 @@ function addData() {
           })
         })
         .then(response => response.json())
-    loadData();
+    setTimeout(loadData, 1100);// do not reshresh before airtable
+    document.forms["create"].reset(); // remove text from form
 }

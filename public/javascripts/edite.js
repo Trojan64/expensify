@@ -8,16 +8,19 @@ let itemName = "";
 let itemNote = "";
 let itemPrice = "";
 let itemSpecification = "";
-//element selection/choose item to edit:
 
-
-
+//Uses airtable
 var Airtable = require('airtable');
 var base = new Airtable({apiKey: 'keyB1Op1RxoiSdZi3'}).base('appWJAgaz2kO3rrb9');
 
-function edit(/*item id to edit*/) {
+//select item to edit
+
+
+//update the item
+function edit() {
     base('Table 1').update([
         {
+            //item that will be edited
           "id": data.records[i].id,
           "fields": {
             "Name": itemName,
@@ -27,6 +30,7 @@ function edit(/*item id to edit*/) {
           }
         },
         {
+            //edit that will be edited (2)
           "id": data.records[i].id,
           "fields": {
             "Name": itemName,

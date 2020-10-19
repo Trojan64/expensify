@@ -17,10 +17,10 @@ function loadData() {
             markup += `
                     <div>
                         <p>
+                            <button onclick="removeItem('${data.records[i].id}')"> Delete </button>
                             <span>${data.records[i].fields.Name}</span>
                             <span>${data.records[i].fields.spec}</span>
                             <span>${data.records[i].fields.Kr} SEK</span>
-                            <button onclick="removeItem('${data.records[i].id}')"> Delete </button>
                         </p>
                     </div>
                  `;

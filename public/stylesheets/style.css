@@ -52,5 +52,9 @@ ul {
   color: rgb(255, 153, 0);
 }
 
+.footerColor {
+  background: linear-gradient(to right, rgb(255, 153, 0), rgb(182, 1, 182));
+}
+
 
 

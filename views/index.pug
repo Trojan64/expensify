@@ -9,6 +9,7 @@ block content
   hr
   h2 Input a new component:
   p Enter a component part
+<<<<<<< HEAD
   input(type="text", id="NewComponent", name="NewComponents", placeholder="", onfocus="this.value=''").form-control
   br
   p Enter the specifications of componet
@@ -19,3 +20,16 @@ block content
   br
   br
   input(type="submit", value="Submit").botton.btn
+=======
+  form#create
+    input(type="text", id="NewComponent", name="NewComponents", placeholder="", onfocus="this.value=''").form-control
+    br
+    p Enter the specifications of componet
+    input(type="text", id="NewSpec", name="NewSpecs", placeholder="", onfocus="this.value=''").form-control
+    br
+    p Enter the price of the component
+    input(type="text", id="NewPrice", name="NewPrices", placeholder="", onfocus="this.value=''").form-control
+    br
+    br
+    button(type="submit", onclick="addData()" value="Submit").btn.btn-danger lägg till
+>>>>>>> a06228a66ee544a1d5d1af83cfec9d16b7c87421

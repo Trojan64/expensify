@@ -4,5 +4,5 @@ function removeItem(recid) {
         method: 'DELETE'
     })
         .then(response => response.json())    
-        setTimeout(loadData, 2000);
+        setTimeout(loadData, 1100);
 }

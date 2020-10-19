@@ -17,7 +17,8 @@ function loadData() {
             markup += `
                     <div>
                         <p>
-                            <button onclick="removeItem('${data.records[i].id}')"> Delete </button>
+                            <button class="delete" onclick="removeItem('${data.records[i].id}')"> Delete </button>
+                            <button class="edite" onclick="editeItem('${data.records[i].id}')"> Edite </button>
                             <span>${data.records[i].fields.Name}</span>
                             <span>${data.records[i].fields.spec}</span>
                             <span>${data.records[i].fields.Kr} SEK</span>

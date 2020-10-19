@@ -1,10 +1,10 @@
 extends layout
 
 block content
-  h1= title
+  h1.titleText= title
   h2 Number one place to keep track of your expenses!
   p Your recorded expenses are:
-  div.container
+  div
     ul#expenses
   hr
   h2 Input a new component:
@@ -18,4 +18,4 @@ block content
   input(type="text", id="NewPrice", name="NewPrices", placeholder="", onfocus="this.value=''").form-control
   br
   br
-  input(type="submit", value="Submit").btn.botton
+  input(type="submit", value="Submit").botton.btn

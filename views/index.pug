@@ -9,4 +9,19 @@ block content
 
   hr
   h2 Input a new component:
+
+  
+  hr
+  h2 Input a new component:
+  p Enter a component part
+  input(type="text", id="NewComponent", name="NewComponents", placeholder="", onfocus="this.value=''").form-control
+  br
+  p Enter the specifications of componet
+  input(type="text", id="NewSpec", name="NewSpecs", placeholder="", onfocus="this.value=''").form-control
+  br
+  p Enter the price of the component
+  input(type="text", id="NewPrice", name="NewPrices", placeholder="", onfocus="this.value=''").form-control
+  br
+  br
+  input(type="submit", value="Submit").btn.btn-danger 
   <iframe class="airtable-embed" src="https://airtable.com/embed/shr5zlg6SNaxZjPga?backgroundColor=green" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>

@@ -9,10 +9,6 @@ let itemNote = "";
 let itemPrice = "";
 let itemSpecification = "";
 //element selection/choose item to edit:
-
-
-
-var Airtable = require('airtable');
 var base = new Airtable({apiKey: 'keyB1Op1RxoiSdZi3'}).base('appWJAgaz2kO3rrb9');
 
 function edit(/*item id to edit*/) {

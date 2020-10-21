@@ -3,12 +3,20 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset="UTF-8")
+    meta( name="author", content="CSS by O. Harrysson")
+    meta( name="viewport", content="width=device-width, initial-scale=1.0")
+    link( rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
   body
     header.bannerWrapper
       div.banner
         p.bannerText Trojan64
+    br
     block content
-    footer
+    br
+    footer.page-footer.font-small.footerColor
+      div.footer-copyright.text-center.py-3 © 2020 Copyright:
+        a(href="https://mdbootstrap.com/") MDBootstrap.com
   script(src="/javascripts/main.js")
   script(src="/javascripts/add.js")
   script(src="/javascripts/edite.js")

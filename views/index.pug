@@ -1,14 +1,26 @@
 extends layout
 
 block content
-  h1= title
-  h2 Hello and welcome to our pc build
-  p The specs of out gaming pc is: #{title}
-  div.container
+  h1.titleText= title
+  h2 Number one place to keep track of your expenses!
+  p Your recorded expenses are:
+  div
     ul#expenses
   hr
   h2 Input a new component:
   p Enter a component part
+<<<<<<< HEAD
+  input(type="text", id="NewComponent", name="NewComponents", placeholder="", onfocus="this.value=''").form-control
+  br
+  p Enter the specifications of componet
+  input(type="text", id="NewSpec", name="NewSpecs", placeholder="", onfocus="this.value=''").form-control
+  br
+  p Enter the price of the component
+  input(type="text", id="NewPrice", name="NewPrices", placeholder="", onfocus="this.value=''").form-control
+  br
+  br
+  input(type="submit", value="Submit").botton.btn
+=======
   form#create
     input(type="text", id="NewComponent", name="NewComponents", placeholder="", onfocus="this.value=''").form-control
     br
@@ -20,3 +32,4 @@ block content
     br
     br
     button(type="submit", onclick="addData()" value="Submit").btn.btn-danger lägg till
+>>>>>>> a06228a66ee544a1d5d1af83cfec9d16b7c87421

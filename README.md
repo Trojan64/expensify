@@ -1,7 +1,7 @@
 # expensify
 ## https://trojan64-expensify.herokuapp.com/ <br>
 ## ideer för framtiden
-ändra inte i package-lock.json
+<h1> ändra inte i package-lock.json! </h1>
 
 ## inköpslista för pc bygge <bR>
   Delete knappen tar bort pryl <br>
